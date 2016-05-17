@@ -13,6 +13,5 @@ if (!function_exists('dump')) {
 	function dump($var)
 	{
 		array_map('Tracy\Debugger::dump', func_get_args());
-		return $var;
 	}
 }
